@@ -13,7 +13,11 @@
     <h2>{{some_dict.inside_key}}</h2> -->
     <!-- 탬플릿으로 주석 작성하는 법 -->
     <!-- <h2>{# this is a commet #}</h2> -->
-    
+    {% if user_logged_in %}
+    <h1>Welcome back you are logged in</h1>
+    {% endif %}
+
+
     <ul>
     {% for item in some_list %}
         <li>{{item}}</li>
