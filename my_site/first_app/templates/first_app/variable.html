@@ -20,7 +20,11 @@
 
     <ul>
     {% for item in some_list %}
-        <li>{{item}}</li>
+        {% if item == 2 %}
+            <li>TWO</li>
+        {% else %}
+            <li>{{item}}</li>
+        {% endif %}
     {% endfor %}
     </ul>
 </body>
