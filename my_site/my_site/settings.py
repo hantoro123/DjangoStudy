@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-g735g*f-x3mfr^-s&vdn!rm78%e$09^03shq@f(zu!7^g#&j#c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'my_site.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         # 'DIRS': [os.path.join(BASE_DIR,'templates/')],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -118,6 +118,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
+# first_app/static/first_app/django.jpeg
 STATIC_URL = 'static/'
 
 # Default primary key field type
