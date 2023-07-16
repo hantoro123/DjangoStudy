@@ -24,6 +24,7 @@ class TeacherCreateView(CreateView):
 class TeacherListView(ListView):
     # mode_list.html
     model = Teacher
+    queryset = Teacher.objects.order_by('first_name')
     context_object_name = "teacher_list"
 
 
